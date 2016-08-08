@@ -1,0 +1,6 @@
+from threading import Thread
+import time
+import Queue
+def str_to_int(arg, queue):
+    result = int(arg)
+    queue.put({arg: result})
